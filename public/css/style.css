@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');	
+/*ESTILO PARA TODO EL DOCUENTO*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;;
+    font-size: 16px;
+    background-color: #B8B8F3;
+}
+img {
+    border-radius: 20px;
+}
+/*ESTILO NAVBAR*/
+.navbar {
+    background-color: #380069 !important;
+    position: sticky;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+}
+.navbar-nav a:hover{
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+.form-control :hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+.btn {
+    background-color: #380069;
+}
+.btn:hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+/*ESTILOS PRINCIPAL*/
+.principal {
+    display: flex;
+    flex-wrap: wrap; 
+}
+aside {
+    flex-basis: 25%;
+    background-color: #F42272;
+    padding: 25px;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+.image img {
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.4s all ease-in-out
+}
+.image:hover img {
+    transform: scale(1.04);
+}
+.asidetitle {
+    text-decoration: overline;
+}
+@media (max-width:991px){
+    .image img {
+        width: 60%;
+        height: auto;
+    }
+}
+main {
+    flex-basis: 75%;
+    background-color: #B8B8F3;
+    padding: 10px;
+    padding-left: 20px;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+article img {
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out
+}
+
+article:hover img {
+    transform: scale(1.04);
+}
+main h2 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+main h5 {
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+}
+main p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+main .leer-mas {
+    background-color: #380069;
+    color: #B8B8F3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+main .leer-mas:hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+.ver-mas {
+    display: block;
+    background-color: #380069;
+    color: #B8B8F3;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ver-mas:hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+@media (max-width:991px){
+    .principal{
+        flex-direction: column;
+    }
+}
+/*ESTILO DE FORMULARIO DE REGISTRO*/
+form {
+    padding: 50px;
+    text-align: center;
+}
+fieldset {
+    display: grid;
+    grid-column: 30vw 50vh;
+    gap: 10px;
+    margin: auto;
+    padding: 25px 25px;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px double #F42272;
+}
+
+legend {
+    text-transform: capitalize;
+    font-size:1.2rem;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+input {
+    padding: 17px;
+    border-radius: 25px;
+    border: 2px solid #F42272;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: #380069;
+    border-radius: 25px;
+}
+.btn:hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+@media (max-width:991px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*ESTILOS CARD*/
+.card {
+    width: 90%;
+    margin: auto;
+    border: #F397D6 solid 3px;
+    background-color: #D7B8F3;
+}
+div h2 {
+    text-align: center;
+}
+
+ul, ol {
+    margin-left: 15px;
+    padding: 5px;
+}
+li {
+    padding: 4px;
+    font-family: 'Noto Sans', sans-serif;
+}
+div iframe {
+    display: flex;
+    justify-content: center;
+}
+.volver-inicio {
+    display: block;
+    background-color: #380069;
+    color: #B8B8F3;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.volver-inicio:hover {
+    background-color: #EDEDE9;
+    color: #B8B8F3;
+}
+@media (max-width:992px) {
+    .card-img-top {
+        height: 50%;
+    }
+}
+/*ESTILOS DEL CARD NOSOTROS*/
+.card {
+    padding-right: 15px;
+}
+.img-fluid {
+    border-radius: 25px;
+    padding-left: 10px;
+    width: 800px;
+    height: 500px;
+}
+/*ESTILOS FOOTER*/
+footer {
+    padding: 8px;
+    text-align: center;
+    background-color: rgba(233, 222, 222, 0.973);
+    color: black;
+    width: 100%;
+}
